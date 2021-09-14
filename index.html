@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="container">
+      <!--This will be displayed on page load. When the start button is clicked we will set a class of "hide"-->
+      <div id="start">
+        <h2>Programing Quiz</h2>
+        <h3>
+          Click the start button to test your coding knowledge with this quick 5
+          question quiz!
+        </h3>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+      <!--This div will show once start is clicked. We will take the class of "hide" off to show and display questions-->
+      <div id="questions" class="hide">
+        <h3 id="question-title"></h3>
+        <div id="choice" class="choice"></div>
+      </div>
+      <!--Once quiz is finished we will hide questions and display the final scores-->
+      <div id="end" class="hide">
+        <div id="high-scores"></div>
+        <h2>Congratulations! You've Finished the quiz.</h2>
+        <p>Final Score <span id="score"></span></p>
+        <p>
+          Enter Initials Here <input type="text" id="user-initials" /><button
+            id="submit"
+          >
+            Submit
+          </button>
+        </p>
+      </div>
+    </div>
+    <script src="./assets/javascript/questions.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
